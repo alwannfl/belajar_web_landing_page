@@ -7,18 +7,57 @@
     <link rel="shortcut icon" href="images/Logo-Pesat.png" type="image/x-icon">
     <title>Landing Page</title>
     <link rel="stylesheet" href="bootstrap-5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+      .section1-1 {
+        margin-left: 290px;
+      }
+      .section1-2 {
+        margin-left: 90px;
+      }
+      .ilustration-1 {
+        height: 400px;
+      }
+      .section-bg-custom {
+        background-color: #e4efff;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .section1-1 {
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 30px;
+        }
+        .section1-2 {
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+        }
+        .ilustration-1 {
+          height: 300px;
+        }
+        .ilustration-2 {
+          width: 240px;
+          margin-bottom: 20px;
+        }
+        #footer-copyright {
+          text-align: center;
+        }
+        #footer-powerd {
+          text-align: center !important;
+        }
+      }
+    </style>
 </head>
 <body>
 <header class="container-fluid p-0">
-    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar fixed-top navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="https://smapluspgri.sch.id" target="_blank">
             <img src="images/Logo-Pesat.png" alt="Logo Pesat" width="40px" class="d-inline-block align-text-top">
             PESAT
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -30,45 +69,349 @@
                 <a class="nav-link" href="#">Link</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   Dropdown
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link disabled" >Disabled</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-outline-light" type="submit">Search</button>
             </form>
           </div>
         </div>
       </nav>
 </header>
 <main class="container-fluid" style="margin-top: 67.6px;">
-    <section class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-header">a</div>
-                <div class="card-body">a</div>
-                <div class="card-footer">a</div>
+    <section class="row bg-primary text-white py-5">
+          <div class="col-sm-6 order-md-last">
+            <div class="section1-2">
+              <img src="images/tv-guy-svg-illustration-free.svg" alt="ilustration-1" class="ilustration-1">
             </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="section1-1">
+              <h1 class="mb-4">Lorem ipsum dolor sit amet consectetur.</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vel reprehenderit sit, iusto hic officia?</p>
+              <button class="btn btn-lg btn-warning mt-4">Button</button>
+            </div>
+          </div>
+    </section>
+    <section class="row py-5">
+      <div class="col text-center">
+        <strong>Lorem, ipsum.</strong>
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <div class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+        <div class="row justify-content-center">
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-9 mb-3">
+                <input type="text" class="form-control" placeholder="Lorem ipsum dolor sit">
+              </div>
+              <div class="col-sm-3 mb-3">
+                <button class="btn btn-warning">Button Section</button>
+              </div>
+            </div>
+          </div>
         </div>
+        <h4>
+          Lorem, ipsum dolor.
+          <small class="text-muted">Lorem, ipsum</small>
+        </h4>
+      </div>
+    </section>
+    <section class="row section-bg-custom py-5">
+      <div class="col text-center">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <div class="row justify-content-center">
+          <div class="col-sm-5">
+            <p class="lead">
+              <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, impedit. Earum reiciendis fugit impedit iusto ut quae, nostrum laudantium tempora.</small>
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-sm-2">
+            <div class="card">
+              <div class="card-body" style="text-align: left;">
+                <h5>Title Card 1</h5>
+                <small class="text-muted">Lorem ipsum dolor sit amet consectetur</small>
+                <div class="my-4">
+                  <div class="badge bg-success">Badge</div>
+                </div>
+                <h4><div class="text-warning" style="display: initial;">Warning</div> Text</h4>
+                <div class="text-center my-4">
+                  <button class="btn btn-outline-warning">Button Card</button>
+                </div>
+                <div class="text-muted">Flex Row</div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #efa500;"></i>
+                    </div>
+                    <div class="p-2">Bootstrap Icon</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
+                    </div>
+                    <div class="p-2">Bootstrap Icon</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-x-circle-fill" style="color: #e20000;"></i>
+                    </div>
+                    <div class="p-2">Bootstrap Icon</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                  <button class="btn btn-primary">Button</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <div class="card-body" style="text-align: left;">
+                <h5>Title Card 2</h5>
+                <small class="text-muted">Lorem ipsum dolor sit amet consectetur</small>
+                <div class="my-4">
+                  <div class="badge bg-success">Badge</div>
+                </div>
+                <h4><div class="text-warning" style="display: initial;">Warning</div> Text</h4>
+                <div class="text-center my-4">
+                  <button class="btn btn-outline-warning">Button Card</button>
+                </div>
+                <div class="text-muted">Flex Row</div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #efa500;"></i>
+                    </div>
+                    <div class="p-2">Bootstrap Icon</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
+                    </div>
+                    <div class="p-2">Bootstrap Icon</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-x-circle-fill" style="color: #e20000;"></i>
+                    </div>
+                    <div class="p-2">Bootstrap Icon</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                  <button class="btn btn-primary">Button</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card border-warning">
+              <div class="card-header">Card Header</div>
+              <div class="card-body" style="text-align: left;">
+                <h5>Title Card 3</h5>
+                <small class="text-muted">Lorem ipsum dolor sit amet consectetur</small>
+                <div class="my-4">
+                  <div class="badge bg-success">Badge</div>
+                </div>
+                <h4><div class="text-warning" style="display: initial;">Warning</div> Text</h4>
+                <div class="text-center my-4">
+                  <button class="btn btn-outline-warning">Button Card</button>
+                </div>
+                <div class="text-muted">Flex Row</div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #efa500;"></i>
+                    </div>
+                    <div class="p-2">Bootstrap Icon</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
+                    </div>
+                    <div class="p-2">Bootstrap Icon</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-x-circle-fill" style="color: #e20000;"></i>
+                    </div>
+                    <div class="p-2">Bootstrap Icon</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                  <button class="btn btn-primary">Button</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <div class="card-body" style="text-align: left;">
+                <h5>Title Card 4</h5>
+                <small class="text-muted">Lorem ipsum dolor sit amet consectetur</small>
+                <div class="my-4">
+                  <div class="badge bg-success">Badge</div>
+                </div>
+                <h4><div class="text-warning" style="display: initial;">Warning</div> Text</h4>
+                <div class="text-center my-4">
+                  <button class="btn btn-outline-warning">Button Card</button>
+                </div>
+                <div class="text-muted">Flex Row</div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #efa500;"></i>
+                    </div>
+                    <div class="p-2">Bootstrap Icon</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
+                    </div>
+                    <div class="p-2">Bootstrap Icon</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-x-circle-fill" style="color: #e20000;"></i>
+                    </div>
+                    <div class="p-2">Bootstrap Icon</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                  <button class="btn btn-primary">Button</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="row section-bg-custom justify-content-center py-5">
+      <div class="col-sm-8">
+        <div class="card bg-primary text-light">
+          <div class="card-body">
+            <div class="row p-4">
+              <div class="col-sm-6 order-md-last">
+                <img src="images/woman_working_1.svg" alt="ilustration-2" class="ilustration-2">
+              </div>
+              <div class="col-sm-6">
+                <h1 class="mb-4">Lorem ipsum dolor sit amet consectetur.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nobis magnam consequuntur ad cumque, illum harum voluptatibus assumenda ipsam incidunt, atque delectus vero doloribus. Dolor?</p>
+                <button class="btn btn-lg btn-warning mt-4">Button Section</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 </main>
-<footer class="container-fluid">
+<footer class="container-fluid py-2 bg-black text-warning">
     <div class="row justify-content-between">
-        <div class="col">a</div>
-        <div class="col">b</div>
+        <div class="col-sm-6">Copyright &copy;2023 Pesat</div>
+        <div class="col-sm-6 text-end">Powered By Studentday Web Design</div>
     </div>
 </footer>
 <script src="bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
+<script>
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
 </body>
 </html>
